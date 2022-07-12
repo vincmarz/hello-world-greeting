@@ -23,7 +23,7 @@ node('docker') {
         "files": [
            {
              "pattern": "target/hello-0.0.1.war",
-             "target": "example-project/${BUILD_NUMBER}/",
+             "target": "http://192.168.122.6:8082/artifactory/example-project/${BUILD_NUMBER}/",
              "props": "Integration-Tested=Yes;Performance-Tested=No"
             }
         ]
