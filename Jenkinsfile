@@ -18,7 +18,7 @@ node('docker') {
       archive 'target/*.jar'
     }
     stage ('Publish'){
-      def server = Artifactory.server 'Artifactory JFrog server'
+      def server = Artifactory.server 'Artifactory_JFrog_server'
       def uploadSpec = """{
         "files": [
            {
